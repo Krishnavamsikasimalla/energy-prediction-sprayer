@@ -1,0 +1,268 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: RPI RPI_IMU Curtis_Controller Hydraulics Battery
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0027 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Limp_Mode : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cruise_Mode : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Battery_Temperature : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Malfunction : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMS_Error_Code : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SOC : 0|12@1+ (0.1,0) [0|100] "%" Vector__XXX
+ SG_ Charging_Status : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NewSignal_0002 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ctrl_Current : 16|16@1- (0.1,0) [-500|500] "A" Vector__XXX
+ SG_ Ctrl_Bat_Power : 0|16@1- (0.1,0) [-32768|32767.8] "W" Vector__XXX
+ SG_ Vehicle_Mode : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Drive_Status : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Gear_Status : 16|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Motor_RPM : 24|16@1- (1,0) [-32768|32768] "RPM" Vector__XXX
+ SG_ Time_Hours : 0|5@1+ (1,0) [0|23] "Hr" Vector__XXX
+ SG_ Time_Minutes : 5|6@1+ (1,0) [0|59] "Min" Vector__XXX
+ SG_ Time_Seconds : 11|6@1+ (1,0) [0|59] "Sec" Vector__XXX
+ SG_ Sprayer_ctrl_temp : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sprayer_Motor_temp : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sprayer_fault : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Hydraulic_ctrl_temp : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Hydraulic_Motor_temp : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Hydraulic_fault : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Spray_Pressure : 0|6@1+ (1,0) [0|50] "bar" Vector__XXX
+ SG_ Spray_Flowrate : 8|8@1+ (1,0) [0|255] "liters" Vector__XXX
+ SG_ Sprayer_Motor_Status : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 512 IMU_Accel: 8 Vector__XXX
+ SG_ Accel_X : 0|16@1- (0.001,0) [-32.768|32.767] "m/s^2" Vector__XXX
+ SG_ Accel_Y : 16|16@1- (0.001,0) [-32.768|32.767] "m/s^2" Vector__XXX
+ SG_ Accel_Z : 32|16@1- (0.001,0) [-32.768|32.767] "m/s^2" Vector__XXX
+ SG_ IMU_Flags : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMU_Seq   : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+
+BO_ 513 IMU_Gyro: 8 Vector__XXX
+ SG_ Gyro_X : 0|16@1- (0.001,0) [-32.768|32.767] "rad/s" Vector__XXX
+ SG_ Gyro_Y : 16|16@1- (0.001,0) [-32.768|32.767] "rad/s" Vector__XXX
+ SG_ Gyro_Z : 32|16@1- (0.001,0) [-32.768|32.767] "rad/s" Vector__XXX
+ SG_ IMU_Flags : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMU_Seq   : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+
+BO_ 514 IMU_Mag: 8 Vector__XXX
+ SG_ Mag_X : 0|16@1- (0.1,0) [-3276.8|3276.7] "uT" Vector__XXX
+ SG_ Mag_Y : 16|16@1- (0.1,0) [-3276.8|3276.7] "uT" Vector__XXX
+ SG_ Mag_Z : 32|16@1- (0.1,0) [-3276.8|3276.7] "uT" Vector__XXX
+ SG_ IMU_Flags : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMU_Seq   : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 384 RPI_HEALTH: 8 RPI
+ SG_ CPU_Percent     : 0|8@1+ (1,0) [0|100] "%"  RPI
+ SG_ RAM_Percent     : 8|8@1+ (1,0) [0|100] "%"  RPI
+ SG_ Load_1min       : 16|8@1+ (1,0) [0|255] ""   RPI
+ SG_ Reserved1       : 24|8@1+ (1,0) [0|0] ""     RPI
+ SG_ Reserved2       : 32|8@1+ (1,0) [0|0] ""     RPI
+ SG_ Reserved3       : 40|8@1+ (1,0) [0|0] ""     RPI
+ SG_ Reserved4       : 48|8@1+ (1,0) [0|0] ""     RPI
+ SG_ Heartbeat       : 56|8@1+ (1,0) [0|255] ""   RPI
+
+BO_ 1055 Battery: 8 Battery
+ SG_ ActualSOCPercentage : 55|8@0+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Battery_current : 7|16@0- (0.1,0) [-32768|32767] "A" Vector__XXX
+ SG_ BatteryVoltage : 23|16@0+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ BatteryEnergy : 39|16@0+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ NoOfSlaves : 63|8@0+ (1,0) [0|255] "no" Vector__XXX
+
+BO_ 2498826432 Curtis_Drive_Status: 8 Curtis_Controller
+ SG_ Travel_Mode : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Field_Mode : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Spray_Pump_Status : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Low_power_mode : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_Forward : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_Neutral : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_Reverse : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_Cruise : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Gear_High : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Gear_Neutral : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Gear_Low : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Motor_Rpm : 24|16@1- (1,0) [-32768|32768] "RPM" Vector__XXX
+ SG_ Vehicle_Acceleration : 40|16@1- (0.001,0) [-10000|10000] "g" Vector__XXX
+
+BO_ 2498826688 Curtis_Telemetry: 7 Curtis_Controller
+ SG_ Speed : 0|16@1- (0.1,0) [-32768|-32767] "kmph" Vector__XXX
+ SG_ Main_Odometer : 16|24@1+ (1,0) [0|999999] "Hours" Vector__XXX
+ SG_ TripA_Odometer : 40|8@1+ (1,0) [0|99] "Hours" Vector__XXX
+ SG_ TripB_Odometer : 48|8@1+ (1,0) [0|99] "Hours" Vector__XXX
+
+BO_ 2565869760 Curtis_Traction_Fault: 2 Curtis_Controller
+ SG_ Tr_ctrl_temp : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Tr_Motor_temp : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Tr_ctrl_fault : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2565935344 Vehicle_status: 5 Curtis_Controller
+ SG_ Gradient : 0|16@1- (0.002746582,0) [-90|90] "deg" Vector__XXX
+ SG_ _2WS_4WS : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Differential_lock : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Honda_Gen_Charge : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566000832 Traction_Events: 3 Curtis_Controller
+ SG_ Gear_Change : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Turn_Off_Ignition : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Change_Mode_Neutral : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Alert_Codes : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HPD_Sequencing : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2565931456 Curtis_Ctrl_V_A_C: 6 Curtis_Controller
+ SG_ Ctrl_Bat_Voltage : 0|16@1+ (0.01,0) [0|200000] "V" Vector__XXX
+ SG_ Ctrl_Bat_Current : 16|16@1- (0.1,0) [-32768|32767] "A" Vector__XXX
+ SG_ Ctrl_Temperature : 32|16@1- (0.1,0) [-1000|3000] "C" Vector__XXX
+
+BO_ 2565931712 Curtis_Mtr_T_A: 8 Curtis_Controller
+ SG_ Tr_Mtr_Temp : 0|16@1- (0.1,0) [-1000|3000] "C" Vector__XXX
+ SG_ Mtr_RMS_currents : 16|16@1+ (0.1,0) [0|10000] "A" Vector__XXX
+ SG_ Motor_ctrl_efficiency : 32|32@1- (1,0) [0|100] "%" Vector__XXX
+
+BO_ 2565931968 Curtis_Cutback: 8 Curtis_Controller
+ SG_ Overall_Cutback : 0|16@1+ (0.0244140625,0) [0|4096] "%" Vector__XXX
+ SG_ Motor_Cutback : 16|16@1+ (0.0244140625,0) [0|4096] "%" Vector__XXX
+ SG_ Controller_Cutback : 32|16@1+ (0.0244140625,0) [0|4096] "%" Vector__XXX
+ SG_ LF_Cutback : 48|16@1+ (0.0244140625,0) [0|4096] "%" Vector__XXX
+
+BO_ 2565932224 Curtis_ctrl_power: 4 Curtis_Controller
+ SG_ Ctrl_power : 0|32@1- (1,0) [-1000000|1000000] "" Vector__XXX
+
+BO_ 2432176282 Hydraulic_ctrl: 8 Hydraulics
+ SG_ Gears : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Triple_speed : 2|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Turn : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BOOST : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ READY : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ THROTTLE : 8|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Contractors : 24|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motorturns : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motor_status : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motor_direction : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Controller_status : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_status : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Error_status : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPM : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ hyd_Motor_temperature : 48|8@1- (1,-40) [0|0] "" Vector__XXX
+ SG_ hyd_Controller_temperature : 56|8@1- (1,-40) [0|0] "" Vector__XXX
+
+BO_ 2432176269 Hydrauli_Ctrl_VA: 8 Hydraulics
+ SG_ DC_voltage : 0|16@1+ (1,0) [0|65525] "V" Vector__XXX
+ SG_ Current : 16|16@1+ (1,0) [0|65525] "A" Vector__XXX
+ SG_ Lap_count : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_code : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1071 Battery2: 8 Battery
+ SG_ MaxTemperature : 32|8@1- (1,0) [-128|127] "C" Vector__XXX
+
+BO_ 784 GNSS_Status: 8 Vector__XXX
+ SG_ GPS_Fix_Quality : 0|8@1+ (1,0) [0|8] "" Vector__XXX
+ SG_ GPS_Satellites : 8|8@1+ (1,0) [0|50] "" Vector__XXX
+ SG_ GPS_HDOP       : 16|16@1+ (0.01,0) [0|50] "" Vector__XXX
+ SG_ GNSS_Flags     : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GNSS_Seq       : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 785 GNSS_Position: 8 Vector__XXX
+ SG_ GNSS_Latitude  : 0|32@1- (1e-7,0) [-90|90] "deg" Vector__XXX
+ SG_ GNSS_Longitude : 32|32@1- (1e-7,0) [-180|180] "deg" Vector__XXX
+
+
+BO_ 543 Batterypack1: 8 Battery
+ SG_ pack1_current : 7|16@0- (0.1,0) [-32768|32767] "A" Vector__XXX
+ SG_ pack1_voltage : 23|16@0+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ pack1_energy : 39|16@0+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ pack1_socpercentage : 55|8@0+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 799 Batterypack2: 8 Battery
+ SG_ pack2_current : 7|16@0- (0.1,0) [-32768|32767] "A" Vector__XXX
+ SG_ pack2_voltage : 23|16@0+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ pack2_energy : 39|16@0+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ pack2_socpercentage : 55|8@0+ (1,0) [0|255] "%" Vector__XXX
+
+
+
+CM_ SG_ 3221225472 SOC "";
+CM_ SG_ 3221225472 Charging_Status "Charging";
+CM_ SG_ 3221225472 Ctrl_Current "Controller current";
+CM_ SG_ 3221225472 Ctrl_Bat_Power "0x33BC";
+CM_ SG_ 3221225472 Vehicle_Mode "Travel/Field/Spray pump/Low Power";
+CM_ SG_ 3221225472 Drive_Status "Drive/Neutral/Reverse/Cruise
+";
+CM_ SG_ 3221225472 Gear_Status "High Gear/Neutral Gear/Low Gear";
+CM_ SG_ 3221225472 Motor_RPM "Motor RPM -ve indicates reverse";
+CM_ BO_ 1055 "Battery consolidated_Percentage_SOC,Charge_Status";
+CM_ BO_ 2498826432 "Vehicle_Mode,Gear_Status,Drive_Status,Cruise,Limp_Mode";
+CM_ SG_ 2498826432 Travel_Mode "Travel mode = 1";
+CM_ SG_ 2498826432 Field_Mode "Field mode =1 ";
+CM_ SG_ 2498826432 Spray_Pump_Status "Spray pump on =1
+";
+CM_ SG_ 2498826432 Low_power_mode "Low power mode =1";
+CM_ SG_ 2498826432 Drive_Forward "Drive type forward =1 ";
+CM_ SG_ 2498826432 Drive_Neutral "Drive type neutral =1";
+CM_ SG_ 2498826432 Drive_Reverse "Drive type Reverse = 1";
+CM_ SG_ 2498826432 Drive_Cruise "Drive Cruise enable = 1";
+CM_ SG_ 2498826432 Gear_High "High gear engaged =1";
+CM_ SG_ 2498826432 Gear_Neutral "Neutral gea rengaged =1";
+CM_ SG_ 2498826432 Gear_Low "Low gear engaged = 1";
+CM_ SG_ 2498826432 Motor_Rpm "0x352F Motor RPM -ve indicates reverse";
+CM_ SG_ 2498826432 Vehicle_Acceleration "0x37D9";
+CM_ BO_ 2498826688 "Speed,Main odo,Trip A odo,Trip B odo";
+CM_ SG_ 2498826688 Speed "0X37DD";
+CM_ BO_ 2565869760 "Traction temp,faults";
+CM_ BO_ 2565935344 "Gradient,2ws,diff,gen charge.";
+CM_ SG_ 2565935344 Gradient "angle";
+CM_ SG_ 2565935344 _2WS_4WS "1-4ws";
+CM_ SG_ 2565935344 Differential_lock "1-differential lock";
+CM_ SG_ 2565935344 Honda_Gen_Charge "1-charging";
+CM_ BO_ 2566000832 "Gear change,ignition,neutral mode alerts";
+CM_ SG_ 2566000832 HPD_Sequencing "HPD error";
+CM_ SG_ 2565931456 Ctrl_Bat_Voltage "0x3398";
+CM_ SG_ 2565931456 Ctrl_Bat_Current "0x338F";
+CM_ SG_ 2565931456 Ctrl_Temperature "0x3000";
+CM_ SG_ 2565931712 Tr_Mtr_Temp "0x3536";
+CM_ SG_ 2565931712 Mtr_RMS_currents "0x3082";
+CM_ SG_ 2565931712 Motor_ctrl_efficiency "0x33E7";
+CM_ SG_ 2565931968 Overall_Cutback "0x32D9";
+CM_ SG_ 2565931968 Motor_Cutback "0x3439";
+CM_ SG_ 2565931968 Controller_Cutback "0x3437";
+CM_ SG_ 2565931968 LF_Cutback "0x4F5C";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 2565931712 Motor_ctrl_efficiency : 1;
+SIG_VALTYPE_ 2565932224 Ctrl_power : 1;

@@ -1,0 +1,77 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Curtis_Controller Hydraulics Battery
+
+BO_ 2432176282 Hydraulic_ctrl_spray: 8 Hydraulics
+ SG_ Gears_spray : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Triple_speed_spray : 2|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cruise_spray : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Turn_spray : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BOOST_spray : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ READY_spray : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ THROTTLE_spray : 8|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Contractors_spray : 24|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motorturns_spray : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motor_status_spray : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Motor_direction_spray : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Controller_status_spray : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_status_spray : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Error_status_spray : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPM_spray : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ hyd_Motor_temperature_spray : 48|8@1- (1,-40) [0|0] "" Vector__XXX
+ SG_ hyd_Controller_temperature_spray : 56|8@1- (1,-40) [0|0] "" Vector__XXX
+
+BO_ 2432176269 Hydrauli_Ctrl_VA__spray: 8 Hydraulics
+ SG_ DC_voltage__spray : 0|16@1+ (0.1,0) [0|65525] "V" Vector__XXX
+ SG_ Current_spray : 16|16@1+ (1,0) [0|65525] "A" Vector__XXX
+ SG_ Lap_count_spray : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_code_spray : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 257 Batterystd__spray: 8 Battery
+ SG_ fucap_2 : 7|16@0+ (0.01,0) [0|655.35] "ah" Vector__XXX
+ SG_ cyclecount_2 : 23|16@0+ (1,0) [0|65535] "c" Vector__XXX
+ SG_ RSOC_2 : 47|8@0+ (1,0) [0|65535] "%" Vector__XXX
+
+BO_ 256 batstd2__spray: 8 Vector__XXX
+ SG_ BatteryVoltage_spray : 7|16@0+ (0.01,0) [0|655.35] "V" Vector__XXX
+ SG_ Battery_current_spray : 23|16@0- (0.01,0) [-327.68|327.68] "A" Vector__XXX
+ SG_ BatteryEnergy_spray : 39|16@0+ (0.01,0) [0|0] "Ah" Vector__XXX
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 3221225472 Motor_ctrl_efficiency : 1;
+SIG_VALTYPE_ 3221225472 Ctrl_power : 1;

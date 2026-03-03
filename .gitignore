@@ -7,3 +7,19 @@ Thumbs.db
 venv/
 venv/
 venv/
+# Virtual env
+.venv/
+
+# Data
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/

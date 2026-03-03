@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sprayer_energy"
+version = "0.1.0"
+description = "Energy prediction models using CAN bus data"
+readme = "README.md"
+requires-python = ">=3.9"
+# You can leave dependencies empty here if you are managing them in requirements.txt
+dependencies = [] 
+
+[tool.setuptools.packages.find]
+where = ["src"]
